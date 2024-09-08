@@ -1,0 +1,8 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-r": "editor::Format"
+    }
+  }
+]
