@@ -169,7 +169,7 @@ do
 done
 
 # Set border color
-riverctl border-color-focused 0x93a1a1
+riverctl border-color-focused 0x7aa2f7 # default: 0x93a1a1
 riverctl border-color-unfocused 0x586e75
 
 # Set keyboard repeat rate
