@@ -12,7 +12,8 @@ window#waybar {
     color: white;
 }
 
-#tags {
+#tags,
+#workspaces {
     background-color: #000000;
     margin: 5px;
     margin-left: 10px;
@@ -20,7 +21,8 @@ window#waybar {
     border-radius: 20px;
 }
 
-#tags button {
+#tags button,
+#workspaces button {
     padding: 5px 10px;
     color: #c0caf5;
     transition:
@@ -29,13 +31,15 @@ window#waybar {
     border-radius: 20px;
 }
 
-#tags button.focused {
+#tags button.focused,
+#workspaces button.focused {
     color: #24283b;
     background-color: #7aa2f7;
     border-radius: 20px;
 }
 
-#tags button:hover {
+#tags button:hover,
+#workspaces button:hover {
     background-color: #010a2e;
     color: #24283b; /* Changed color on hover for contrast */
     border-radius: 20px;
@@ -122,3 +126,4 @@ window#waybar {
     margin-bottom: 0;
     color: #e0af68;
 }
+

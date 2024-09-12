@@ -17,7 +17,8 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 # Background image
 swww-daemon &
-swww img ~/.config/wallpapers/zelda_animated.gif
+kanshi &
+# swww img ~/.config/wallpapers/zelda_animated.gif
 
-# ChickenBuddy
-cb &
+# Buddy
+buddy -m 15 -c 60 &
