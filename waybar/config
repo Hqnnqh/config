@@ -3,10 +3,19 @@
     "height": 30, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["sway/window" ],
+    // hypr:
+    // "modules-left": ["hyprland/workspaces"],
+    // "modules-center": ["sway/window" ],
+
+    // river:
+    "modules-left": ["river/tags"],
+    "modules-center": ["river/window" ],
+
     "modules-right": ["clock", "network","pulseaudio", "battery"],
+
     // Modules configuration
+
+    // hypr:
     "hyprland/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
@@ -33,6 +42,12 @@
 	"tooltip": true,
 	"tooltip-format": "{:%Y-%m-%d}",
     },
+
+    "river/tags": {
+        "format": "{name}",
+        "disable-scroll": true
+    },
+
     "battery": {
         "states": {
             // "good": 95,
