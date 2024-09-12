@@ -28,11 +28,17 @@ riverctl map normal Super W spawn 'wofi --show drun -I --width=500 --height=400'
 # Clipman for clipboard managment | Super+V
 riverctl map normal Super V spawn 'clipman pick --tool=wofi --tool-args="--width=500 --height=400"'
 
+# Grim to take screenshots | Super+C
+riverctl map normal Super C spawn 'grim'
+
 # Yazi as a filemanager | Super+E
 riverctl map normal Super E spawn 'kitty -e yazi'
 
 # Swaylock | Super+L
 riverctl map normal Super L spawn 'swaylock'
+
+# Zed | Super+R
+riverctl map normal Super R spawn 'zeditor'
 
 # Super+J and Super+K to focus the next/previous view in the layout stack
 riverctl map normal Super J focus-view next

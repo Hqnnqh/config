@@ -16,4 +16,8 @@ export XCURSOR_SIZE=24
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 # Background image
-swaybg --image ~/.config/wallpapers/zelda.jpg &
+swww-daemon &
+swww img ~/.config/wallpapers/zelda_animated.gif
+
+# ChickenBuddy
+cb &
