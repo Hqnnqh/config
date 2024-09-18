@@ -29,4 +29,4 @@ kanshi &
 # swww img ~/.config/wallpapers/zelda_animated.gif
 
 # Buddy
-buddy -m 15 -c 60 &
+buddy -x 100 -y 1035 -c 40 -m 15 &      
