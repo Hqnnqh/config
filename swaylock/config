@@ -6,7 +6,7 @@ screenshots
 clock
 
 indicator
-indicator-radius=95
+indicator-radius=110
 indicator-thickness=5
 
 effect-blur=5x5
