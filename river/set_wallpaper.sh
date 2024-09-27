@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WALLPAPER_PATH="~/.config/wallpapers/zelda_animated.gif"
+WALLPAPER_PATH="~/.config/wallpapers/mario.gif"
 
 # Set wallpaper for eDP-1
 swww img "$WALLPAPER_PATH" -o eDP-1
