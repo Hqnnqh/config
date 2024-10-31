@@ -1,56 +1,61 @@
-/* ::root{ */
-/*     --accent: #5291e2; */
-/*     --dark: #383C4A; */
-/*     --light: #7C818C; */
-/*     --ld: #404552; */
-/*     --dl: #4B5162 */
-/*     --white: white; */
-/* } */
-
 * {
     font-size: 1.2rem;
-    font-family: monospace;
+    font-family: "Source Code Pro", monospace;
 }
 
 window {
-    border: 1px solid;
-    background-color: #7aa2f7;
-    /*background-color: #e46a1a;*/
-    /*    background-color: #56B6C2;*/
+    border: 2px solid #7aa2f7; /* Outer blue border */
+    background-color: #000000;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 #input {
-    margin: 5px;
-    border-radius: 0px;
+    margin: 10px;
     border: none;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #7aa2f7;
     background-color: #000000;
     color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
 }
 
-#inner-box {
+#inner-box, #outer-box {
     background-color: #000000;
+    border-radius: 20px;
 }
 
 #outer-box {
     margin: 5px;
-    padding: 20px;
-    background-color: #000000;
-}
-
-#scroll {
+    padding: 10px;
 }
 
 #text {
-    padding: 5px;
-    color: white;
+    padding: 10px;
+    color: #c0caf5;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
+}
+
+#entry {
+    background-color: transparent;
+    color: #c0caf5;
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#entry:hover {
+    background-color: #010a2e;
+    color: #24283b;
 }
 
 #entry:selected {
-    /*    background-color: #56B6C2;*/
-    /*    background-color: #e46a1a;*/
     background-color: #7aa2f7;
+    color: #24283b;
 }
 
 #text:selected {
+    color: #24283b;
 }
