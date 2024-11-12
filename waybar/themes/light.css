@@ -1,0 +1,130 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Source Code Pro", "Material Design Icons Desktop, Regular",
+        "Iosevka Nerd Font Mono";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: black;
+}
+
+#tags,
+#workspaces {
+    background-color: #f0f0f0; /* Softer light gray */
+    margin: 5px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    border-radius: 20px;
+    padding-right: 5px;
+}
+
+#tags button,
+#workspaces button {
+    padding: 5px 10px;
+    color: #1a1a1a;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+    border-radius: 20px;
+}
+
+#tags button.focused,
+#workspaces button.focused {
+    color: #ffffff;
+    background-color: #3388ff;
+    border-radius: 20px;
+}
+
+#tags button:hover,
+#workspaces button:hover {
+    background-color: #d9e6f2; /* Soft hover color */
+    color: #1a1a1a;
+    border-radius: 20px;
+}
+
+#tray,
+#clock,
+#battery,
+#cpu {
+    background-color: #f0f0f0; /* Consistent light gray */
+    padding: 0px 10px;
+    margin: 5px 0;
+    margin-bottom: 0;
+    border-radius: 20px;
+}
+
+#cpu {
+    color: #006bb3;
+    padding: 0 10px;
+}
+
+#clock {
+    color: #005999;
+    padding: 0 10px;
+}
+
+#tray {
+    font-size: 0;
+    margin-right: 0;
+    border-radius: 0;
+    padding-right: 0;
+}
+
+#tray menu {
+    background-color: #e5e5e5;
+    border-radius: 7px;
+    color: #333333;
+}
+
+#battery {
+    color: #28a745;
+}
+
+#battery.charging {
+    color: #28a745;
+}
+
+#battery.warning:not(.charging) {
+    color: #ff0000;
+}
+
+#network {
+    background-color: #f0f0f0; /* Softer gray */
+    margin: 5px 0;
+    margin-bottom: 0;
+    color: #ff5c5c;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+#network-icon {
+    background-color: #f0f0f0; /* Softer gray */
+    color: #ff5c5c;
+    padding: 0px 10px;
+    margin: 5px 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+#pulseaudio {
+    background-color: #f0f0f0; /* Softer gray */
+    padding: 0 10px;
+    margin: 5px 0;
+    margin-bottom: 0;
+    color: #ffb74d;
+    border-radius: 20px;
+}
+
+#pulseaudio.pulse2 {
+    font-size: 18px;
+    background-color: #f0f0f0; /* Softer gray */
+    margin: 5px 0;
+    margin-bottom: 0;
+    color: #ffb74d;
+}
+

@@ -1,0 +1,129 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Source Code Pro", "Material Design Icons Desktop, Regular",
+        "Iosevka Nerd Font Mono";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: white;
+}
+
+#tags,
+#workspaces {
+    background-color: #000000;
+    margin: 5px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    border-radius: 20px;
+	padding-right: 5px;
+}
+
+#tags button,
+#workspaces button {
+    padding: 5px 10px;
+    color: #c0caf5;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+    border-radius: 20px;
+}
+
+#tags button.focused,
+#workspaces button.focused {
+    color: #24283b;
+    background-color: #7aa2f7;
+    border-radius: 20px;
+}
+
+#tags button:hover,
+#workspaces button:hover {
+    background-color: #010a2e;
+    color: #24283b; /* Changed color on hover for contrast */
+    border-radius: 20px;
+}
+
+#tray,
+#clock,
+#battery,
+#cpu {
+    background-color: #000000;
+    padding: 0px 10px;
+    margin: 5px 0;
+    margin-bottom: 0;
+    border-radius: 20px;
+}
+
+#cpu {
+    color: #1b609b;
+    padding: 0 10px;
+}
+
+#clock {
+    color: #7dcfff;
+    padding: 0 10px;
+}
+
+#tray {
+    font-size: 0; /* Hide tray text */
+    margin-right: 0;
+    border-radius: 0;
+    padding-right: 0;
+}
+
+#tray menu {
+    background-color: #1e222a;
+    border-radius: 7px;
+    color: #b7b5b4;
+}
+
+#battery {
+    color: #9ece6a;
+}
+
+#battery.charging {
+    color: #9ece6a;
+}
+
+#battery.warning:not(.charging) {
+    color: #8b0000;
+}
+
+#network {
+    background-color: #000000;
+    margin: 5px 0;
+    margin-bottom: 0;
+    color: #f7768e;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+#network-icon {
+    background-color: #000000;
+    color: #f7768e;
+    padding: 0px 10px;
+    margin: 5px 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+#pulseaudio {
+    background-color: #000000;
+    padding: 0 10px;
+    margin: 5px 0;
+    margin-bottom: 0;
+    color: #e0af68;
+    border-radius: 20px;
+}
+
+#pulseaudio.pulse2 {
+    font-size: 18px;
+    background-color: #000000;
+    margin: 5px 0;
+    margin-bottom: 0;
+    color: #e0af68;
+}
