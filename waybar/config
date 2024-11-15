@@ -2,16 +2,10 @@
     "layer": "top", // Waybar at top layer
     "height": 30, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
-    // hypr:
-    // "modules-left": ["hyprland/workspaces"],
-    // "modules-center": ["sway/window" ],
 
-    // river:
-    "modules-left": ["river/tags", "hyprland/workspaces"],
+	"modules-left": ["river/tags", "hyprland/workspaces"],
     "modules-center": ["river/window", "hyprland/window"],
-
-    "modules-right": ["cpu", "clock", "network","pulseaudio", "battery"],
+    "modules-right": ["custom/themer", "cpu", "clock", "network","pulseaudio", "battery"],
 
     // Modules configuration
 
@@ -97,5 +91,10 @@
 	"max-length": 100, // Characters count
 	"separate-outputs": true,
 	"icon": true
-  }
+  },
+  "custom/themer": {
+    "interval": 10,
+    "format": "HEY",
+    "on-click": "~/config/scripts/update_slime.sh"
+}
 }
