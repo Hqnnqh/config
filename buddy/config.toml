@@ -1,0 +1,13 @@
+character_size = 75
+fps = 8
+movement_speed = 15
+onclick_event_chance = 15
+x = 100
+y = 1014
+left = false
+flip_horizontal = false
+flip_vertical = true
+debug = true
+signal_frequency = 1
+automatic_reload = false
+sprites_path = "$HOME/.config/buddy/sprites/current_sprites/"

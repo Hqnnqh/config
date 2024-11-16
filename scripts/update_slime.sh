@@ -2,15 +2,16 @@
 
 set -e
 
-CURRENT_SPRITES=$HOME/.config/buddy/current_sprites
+SPRITES_DIR=$HOME/.config/buddy/sprites
+CURRENT_SPRITES=$SPRITES_DIR/current_sprites
 
 # check for current theme
 if [ $(cat $CURRENT_SPRITES/current.txt) = "green" ]; then
 	
-	NEW_SPRITES=$HOME/.config/buddy/red_slime_sprites
+	NEW_SPRITES=$SPRITES_DIR/red_slime_sprites
 	echo "red" > $CURRENT_SPRITES/current.txt
 else
-	NEW_SPRITES=$HOME/.config/buddy/green_slime_sprites
+	NEW_SPRITES=$SPRITES_DIR/green_slime_sprites
 	echo "green" > $CURRENT_SPRITES/current.txt
 fi
 
