@@ -5,7 +5,7 @@
 
 	"modules-left": ["river/tags", "hyprland/workspaces"],
     "modules-center": ["river/window", "hyprland/window"],
-    "modules-right": ["custom/themer", "cpu", "clock", "network","pulseaudio", "battery"],
+    "modules-right": ["custom/themer", "cpu", "clock", "network", "backlight", "pulseaudio", "battery"],
 
     // Modules configuration
 
@@ -55,7 +55,7 @@
         "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""]
     },
-    "cpu": {
+	"cpu": {
         "interval": 10,
         "format": " {usage}%",
         "max-length": 10,
@@ -87,6 +87,13 @@
   	"scroll-step": 1,
   	"on-click": "pavucontrol"
   },
+  "backlight": {
+	"device": "intel_backlight",
+	"format": "{percent}% {icon}",
+	"format-icons": ["", ""],
+	"on-click": "brightnessctl set 10%+",
+    "on-click-right": "brightnessctl set 10%-"
+	},
   "hyprland/window": {
 	"max-length": 100, // Characters count
 	"separate-outputs": true,
@@ -96,5 +103,5 @@
     "interval": 10,
     "format": "HEY",
     "on-click": "~/config/scripts/update_slime.sh"
-}
+  }
 }

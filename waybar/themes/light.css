@@ -128,3 +128,11 @@ window#waybar {
     color: #ffb74d;
 }
 
+#backlight {
+    background-color: #000000;
+    margin: 5px 0;
+    margin-bottom: 0;
+    padding: 0 10px;
+    border-radius: 20px;
+    color: #e0af68; 
+}
