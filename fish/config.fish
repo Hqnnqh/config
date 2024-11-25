@@ -10,6 +10,4 @@ if status is-interactive
 		command man $argv | bat -l man
 	end
 
-	alias cat bat
-
 end
