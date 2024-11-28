@@ -10,4 +10,7 @@ if status is-interactive
 		command man $argv | bat -l man
 	end
 
+	function bless
+		command bat --paging=always $argv
+	end
 end
