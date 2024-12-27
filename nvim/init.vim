@@ -9,6 +9,8 @@
 " disable copilot by default
 let g:copilot_enabled = v:false
 
+let g:NERDTreeChDirMode=2
+
 call plug#begin()
 
 Plug 'https://github.com/vim-airline/vim-airline'
@@ -50,7 +52,7 @@ nnoremap <C-t> :NERDTreeToggle<cr>
 nnoremap <C-g> :TagbarToggle<cr>
 nnoremap <C-f> :Telescope find_files<cr>
 nnoremap <C-u> :UndotreeToggle<cr>
-nnoremap <C-h> :ToggleTerm dir=$PWD<cr>
+nnoremap <C-h> :ToggleTerm dir=<C-R>=getcwd()<CR><CR>
 
 :colorscheme orbital
 
