@@ -6,6 +6,9 @@
 :set softtabstop=4
 :set mouse=a
 
+" disable copilot by default
+let g:copilot_enabled = v:false
+
 call plug#begin()
 
 Plug 'https://github.com/vim-airline/vim-airline'
@@ -38,6 +41,9 @@ Plug 'github/copilot.vim'
 "undotree
 Plug 'mbbill/undotree'
 
+" gitsigns
+Plug 'lewis6991/gitsigns.nvim'
+
 call plug#end()
 
 nnoremap <C-t> :NERDTreeToggle<cr> 
@@ -46,10 +52,13 @@ nnoremap <C-f> :Telescope find_files<cr>
 nnoremap <C-u> :UndotreeToggle<cr>
 nnoremap <C-h> :ToggleTerm dir=$PWD<cr>
 
-:colorscheme onedark
+:colorscheme orbital
 
 " terminal
 lua require("toggleterm").setup()
+
+" gitsigns
+lua require('gitsigns').setup()
 
 lua <<EOF
   -- Set up nvim-cmp.
@@ -119,5 +128,6 @@ lua <<EOF
   require('lspconfig')['clangd'].setup {
 	capabilities = capabilities
   }
+
 
 EOF
