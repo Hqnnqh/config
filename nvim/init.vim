@@ -9,7 +9,11 @@
 " disable copilot by default
 let g:copilot_enabled = v:false
 
+" update CWD anytime a new directory is made Root
 let g:NERDTreeChDirMode=2
+
+" rust: format on save
+let g:rustfmt_autosave = 1
 
 call plug#begin()
 
