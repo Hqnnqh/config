@@ -6,7 +6,7 @@
 | **Window Manager**      | [Hyprland](https://github.com/hyprwm/Hyprland) |
 | **Status Bar**          | [Waybar](https://github.com/Alexays/Waybar) |
 | **Application Launcher**| [Wofi](https://github.com/SimplyCEO/wofi) |
-| **Terminal**            | [Ghostty](https://github.com/ghostty-org/ghostty) |
+| **Terminal**            | [Kitty](https://github.com/kovidgoyal/kitty) |
   | **Shell**             | [Fish](https://github.com/fish-shell/fish-shell) |
   | **Shell Prompt**      | [Tide](https://github.com/IlanCosman/tide) |
   | **Code Editor**       | [Zed](https://github.com/zed-industries/zed) |
