@@ -18,7 +18,7 @@
          "format": "{name}: {icon}",
          "format-icons": {
              "1": "",
-             "2": "",
+             "2": "󰈹",
              "3": "",
              "4": "",
              "5": "",
@@ -75,7 +75,7 @@
 		"format-bluetooth": "{volume}% {icon}",
 		"format-muted": "",
 		"format-icons": {
-			"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+			"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
 			"headphones": "",
 			"handsfree": "",
 			"headset": "",
@@ -90,7 +90,7 @@
   "backlight": {
 	"device": "intel_backlight",
 	"format": "{percent}% {icon}",
-	"format-icons": ["", ""],
+	"format-icons": ["", ""],
 	"on-click": "brightnessctl set 10%+",
     "on-click-right": "brightnessctl set 10%-"
 	},

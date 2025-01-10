@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "Source Code Pro", "Material Design Icons Desktop, Regular",
+    font-family: "CommitMono Nerd Font", "Source Code Pro", "Material Design Icons Desktop, Regular",
         "Iosevka Nerd Font Mono";
     font-size: 14px;
     min-height: 0;
@@ -19,31 +19,30 @@ window#waybar {
     margin-left: 10px;
     margin-bottom: 0;
     border-radius: 20px;
-	padding-right: 5px;
 }
 
 #tags button,
 #workspaces button {
     padding: 5px 10px;
-    color: #c0caf5;
+    color: #ffffff;
+	background-color: #000000;
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
     border-radius: 20px;
 }
 
-#tags button.focused,
-#workspaces button.focused {
-    color: #24283b;
-    background-color: #7aa2f7;
-    border-radius: 20px;
+#tags button.visible,
+#workspaces button.visible {
+	color: #ffffff; 
+    background-color: #000000; 
+    border: 2px solid #7aa2f7; 
 }
 
 #tags button:hover,
 #workspaces button:hover {
-    background-color: #010a2e;
-    color: #24283b; /* Changed color on hover for contrast */
-    border-radius: 20px;
+    color: #000000;
+    background-color: #7aa2f7;
 }
 
 #tray,
@@ -58,17 +57,17 @@ window#waybar {
 }
 
 #cpu {
-    color: #1b609b;
+    color: #7aa2f7;
     padding: 0 10px;
 }
 
 #clock {
-    color: #7dcfff;
+    color: #7aa2f7;
     padding: 0 10px;
 }
 
 #tray {
-    font-size: 0; /* Hide tray text */
+    font-size: 0; 
     margin-right: 0;
     border-radius: 0;
     padding-right: 0;
@@ -81,7 +80,7 @@ window#waybar {
 }
 
 #battery {
-    color: #9ece6a;
+    color: #7aa2f7;
 }
 
 #battery.charging {
@@ -96,14 +95,14 @@ window#waybar {
     background-color: #000000;
     margin: 5px 0;
     margin-bottom: 0;
-    color: #f7768e;
+    color: #7aa2f7;
     padding: 0 10px;
     border-radius: 20px;
 }
 
 #network-icon {
     background-color: #000000;
-    color: #f7768e;
+    color: #7aa2f7;
     padding: 0px 10px;
     margin: 5px 0;
     margin-bottom: 0;
@@ -116,7 +115,7 @@ window#waybar {
     padding: 0 10px;
     margin: 5px 0;
     margin-bottom: 0;
-    color: #fc6b03;
+    color: #7aa2f7;
     border-radius: 20px;
 }
 
@@ -125,7 +124,7 @@ window#waybar {
     background-color: #000000;
     margin: 5px 0;
     margin-bottom: 0;
-    color: #fc6b03;
+    color: #7aa2f7;
 }
 
 #backlight {
@@ -134,5 +133,5 @@ window#waybar {
     margin-bottom: 0;
     padding: 0 10px;
     border-radius: 20px;
-    color: #e0af68; 
+    color: #7aa2f7; 
 }
