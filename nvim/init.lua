@@ -57,8 +57,12 @@ vim.api.nvim_set_keymap('n', '<C-t>', ':NERDTreeToggle<CR>', { noremap = true, s
 vim.api.nvim_set_keymap('n', '<C-g>', ':TagbarToggle<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-f>', ':Telescope find_files<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-u>', ':UndotreeToggle<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-h>', ':ToggleTerm dir=' .. vim.fn.getcwd() .. '<CR>', { noremap = true, silent = true })
-
+vim.api.nvim_set_keymap(
+  'n',
+  '<C-h>',
+  ":ToggleTerm dir=<C-r>=getcwd()<CR><CR>",
+  { noremap = true, silent = true }
+)
 -- Set colorscheme
 vim.cmd('colorscheme orbital')
 
