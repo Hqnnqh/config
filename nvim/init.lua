@@ -15,6 +15,7 @@ vim.g.NERDTreeChDirMode = 2
 
 -- Rust: format on save
 vim.g.rustfmt_autosave = 1
+vim.lsp.inlay_hint.enable(true, { 0 })
 
 -- Plugin management with Packer
 require('packer').startup(function(use)
@@ -24,7 +25,6 @@ require('packer').startup(function(use)
   use 'https://github.com/ap/vim-css-color'
   use 'https://github.com/ryanoasis/vim-devicons'
   use 'https://github.com/rafi/awesome-vim-colorschemes'
-
   -- Fuzzy finder
   use 'nvim-lua/plenary.nvim'
   use { 'nvim-telescope/telescope.nvim', tag = '0.1.5' }
@@ -126,7 +126,7 @@ cmp.setup.cmdline(':', {
 -- LSP configuration
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 require('lspconfig').rust_analyzer.setup {
-  capabilities = capabilities
+  capabilities = capabilities,
 }
 require('lspconfig').asm_lsp.setup {
   capabilities = capabilities
